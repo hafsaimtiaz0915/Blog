@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logIn</title>
+    <!-- -------------------FontAwesome-------------------- -->
+    <script src="https://kit.fontawesome.com/9828c0ee5c.js" crossorigin="anonymous"></script>
+    <!-- ----------------Bootstrap--------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ---------------------CSS---------------------- -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #7749F8 !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style=" color: white !important;">Personal Blog App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <p class="nav-link active mb-0 logoutBtn" style=" color: white !important;">logout</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+        <div class="Maincontainer">
+            <div class="formContainer mt-5">
+                <div class="form">
+                    <p class="fw-bold">Email address</p>
+                    <input  type="text" id="email" placeholder="Email address" class="form-control" style="width: 70%;" required>
+                    <p class="fw-bold">Password</p>
+                    <div class="passDiv d-flex">
+                        <div class="input-group mb-3">
+                            <input  type="password" class="form-control " id="password" placeholder="Password" required>
+    
+                        </div>
+                     </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="color: #282828;">
+                            Remember me
+                        </label>
+                    </div>
+                    <button type="button" id="loginBtn" class="btn ">Log in</button>
+                    <p>or</p>
+                    <button type="button" class="btn" id="creatBtn" onClick="window.location.href = '../singup/singup.html'">Creat new account</button>
+                </div>
+        </div>
+    
+
+
+
+        <!-- --------------------------MomentJS---------------------- -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+            integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- ----------------------------Bootstrap------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <!-- ------------------------SignUp---------------------------------------------- -->
+        <script src="signUp.js" type="module"></script>
+
+</body>
+
+</html>

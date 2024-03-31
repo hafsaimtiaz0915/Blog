@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.postConatiner {
+    padding: 24px !important;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.image {
+    width: 100px;
+}

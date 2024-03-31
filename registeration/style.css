@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff !important;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Maincontainer {
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    
+}
+
+.logo {
+    padding: 10px 5px;
+}
+
+.logo h1 {
+    font-size: 4.5rem;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: #fafafa;
+}
+
+.heading h1 {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    color: #fafafa;
+}
+
+.formContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+.logincontainer{
+    display: block;
+    border: 1px black;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form p {
+    margin-bottom: 5px;
+    color: #282828;
+}
+
+.passDiv {
+    width: 70%;
+}
+
+.passDiv button {
+    height: fit-content;
+}
+
+.passDiv input {
+    width: 100%;
+}
+
+input {
+    width: 70%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ffc107;
+    font-size: 16px;
+    padding: 8px;
+}
+
+input:focus {
+    outline: 1px solid #ffc107 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+#email,
+#password,
+#flexCheckDefault {
+    margin-bottom: 15px;
+}
+
+#loginBtn {
+    width: fit-content;
+    padding: 6px 55px;
+    color: white;
+    background-color: #7749F8;
+}
+
+#creatBtn {
+    width: fit-content;
+    
+}
+
+#exampleModalLabel {
+    font-family: 'Righteous', cursive;
+    width: 100%;
+}
+
+.modal-header {
+    border-bottom: none !important;
+    text-align: center !important;
+}
+
+.modal-header .btn-close {
+    margin-left: 0px;
+}
+
+.dropdown-item:hover {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+#text-muted {
+    font-size: 13px;
+    color: red;
+}
+
+
+/* SmartPhone Screen */
+
+@media(min-width: 320px) and (max-width: 500px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .formContainer {
+        width: 100%;
+        height: 80vh;
+    }
+
+    #email {
+        width: 90% !important;
+    }
+
+    .passDiv {
+        width: 90%;
+    }
+
+    #purpleBlob {
+        width: 250px !important;
+        right: 70px;
+    }
+
+    #greenBlob {
+        width: 360px !important;
+    }
+
+    #yellowBlob {
+        left: -88px !important;
+        bottom: 53px !important;
+    }
+
+    #redBlob {
+        width: 255px !important;
+        top: -55px !important;
+    }
+}
+
+/* Tablet Screen */
+
+@media(min-width: 501px) and (max-width: 768px) {
+    #purpleBlob {
+        right: 130px;
+    }
+
+    .formContainer {
+        width: 66%;
+    }
+}
